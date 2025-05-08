@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Fun Facts</title>
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+      background-image: url('images/backgroung funfact.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+    body::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(245, 245, 245, 0.4);
+      z-index: -1;}
+
+    header {
+      padding: 6rem 2rem;
+      text-align: center;
+      color: black;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      margin: 0;
+    }
+
+    main {
+      padding: 6rem 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .fun-facts-container {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 4rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .fun-fact-card {
+      background-color: white;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .fun-fact-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .fun-fact-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .fun-fact-description {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: lightblue;
+      color: black;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>World Cup Fun Facts</h1>
+  </header>
+
+  <main>
+    <section class="fun-facts-container">
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Smallest World Cup Winner</h2>
+        <p class="fun-fact-description">Uruguay, the host nation of the first World Cup in 1930, had a population of just 1.7 million people at the time - making them the smallest country to ever win the tournament.</p>
+      </div>
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Longest Goal in World Cup History</h2>
+        <p class="fun-fact-description">In the 1994 World Cup, Brazilian goalkeeper Rene Higuita scored a stunning goal from his own half of the field against Scotland, setting the record for the longest goal scored in a World Cup match.</p>
+      </div>
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Youngest World Cup Player</h2>
+        <p class="fun-fact-description">In the 1950 World Cup, Norman Rimmington of England became the youngest player to ever appear in a World Cup match at the age of just 17 years and 93 days.</p>
+      </div>
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Longest World Cup Match</h2>
+        <p class="fun-fact-description">The 2006 World Cup quarter-final between Germany and Argentina went to a penalty shootout, which lasted for 18 kicks - the longest penalty shootout in World Cup history.</p>
+      </div>
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Most Successful World Cup Team</h2>
+        <p class="fun-fact-description">Brazil has won the FIFA World Cup a record 5 times, in 1958, 1962, 1970, 1994, and 2002, cementing their status as the most successful national team in the tournament's history.</p>
+      </div>
+      <div class="fun-fact-card">
+        <h2 class="fun-fact-title">The Highest-Scoring World Cup Match</h2>
+        <p class="fun-fact-description">The 1954 World Cup quarter-final between Austria and Switzerland ended with a score of 7-5, making it the highest-scoring match in World Cup history.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FIFA World Cup. All rights reserved.</p>
+  </footer>
+</body>
+</html>

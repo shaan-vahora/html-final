@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hero</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: gold; 
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      color: black;
+      font-size: 3rem;
+      margin: 0;
+    }
+    
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .heroes {
+      padding: 3rem;
+      background-color: #f5f5f5;
+      background-image: url('images/hero backgroung.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+  
+
+
+    .heroes h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero-profiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+    }
+
+    .hero-profile {
+      background-color:lightsteelblue;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hero-profile:hover {
+      transform: translateY(-10px);
+    }
+
+    .hero-profile img {
+      width: 100%;
+      height: 35%;
+      object-fit:contain
+    }
+
+    .hero-profile-content {
+      padding: 1.5rem;
+    }
+
+    .hero-profile h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-profile p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    footer {
+      background-color: skyblue; 
+      color: black;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+   
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FIFA World Cup</h1>
+  </header>
+
+  <section class="heroes">
+    <h2>FIFA World Cup Heroes</h2>
+    <div class="hero-profiles">
+      <div class="hero-profile">
+        <img src="images/zidane.jpg" alt="Zinedine Zidane">
+        <div class="hero-profile-content">
+          <h3>Zinedine Zidane</h3>
+          <p>Won the 1998 World Cup for France, scoring twice in the final. Played a key role in France's 2006 World Cup campaign, despite being sent off in the final. Went on to become a successful manager, winning multiple Champions League titles with Real Madrid.</p>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="images/greaves.jpg" alt="Jimmy Greaves">
+        <div class="hero-profile-content">
+          <h3>Jimmy Greaves</h3>
+          <p>Part of England's 1966 World Cup-winning squad, but missed the final due to injury. Scored a record-breaking 6 hat-tricks for the England national team. Beloved by fans for his heroic exploits on and off the pitch, including rescuing a dog that had invaded the field during a Brazil match.</p>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="images/ronaldo.jpg" alt="Ronaldo">
+        <div class="hero-profile-content">
+          <h3>Ronaldo</h3>
+          <p>Scored a then-record-breaking 15 World Cup goals across 4 tournaments. Showcased his incredible speed, skill, and goal-scoring ability, captivating audiences worldwide. Lifted the World Cup trophy in 1998 and 2002, cementing his status as one of the greatest players of all time.</p>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="images/beckenbauer.jpg" alt="Franz Beckenbauer">
+        <div class="hero-profile-content">
+          <h3>Franz Beckenbauer</h3>
+          <p>One of only 3 people to win the World Cup as both a player and a manager. Captained the West German team to victory in 1974 and later guided them to the 1990 title as a manager. Played a key role in Germany's successful bid to host the 2006 World Cup, though the campaign was later investigated for alleged corruption.</p>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="images/cruyff.jpg" alt="Johan Cruyff">
+        <div class="hero-profile-content">
+          <h3>Johan Cruyff</h3>
+          <p>Pioneered the revolutionary "Total Football" philosophy, transforming the way the game was played. Led the Netherlands to the 1974 World Cup final, showcasing his unparalleled skill and creativity. Considered one of the most influential figures in the history of the sport, both as a player and a visionary coach.</p>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="images/messi.jpg" alt="Lionel Messi">
+        <div class="hero-profile-content">
+          <h3>Lionel Messi</h3>
+          <p>Lionel Messi is widely regarded as one of the greatest football players of all time. The Argentine forward has won a record 8 Ballon d'Or awards and led his country to the 2022 World Cup title.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FIFA World Cup. All rights reserved.</p>
+  </footer>
+</body>
+</html>
